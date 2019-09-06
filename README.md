@@ -1,5 +1,5 @@
 # UnequaledThought
 IB Computer Science (SL)
-Academic Interest: Science, specifically biology 
-Learn more about computers and how they function
-Logically, since it was basically like connecct the dot
+My cademic Interest: Science, but specifically biology. 
+I want to learn more about computers and how they function.
+I have used logically, since it was basically like connect the dots.
