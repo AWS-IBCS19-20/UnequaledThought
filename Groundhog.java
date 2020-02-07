@@ -1,25 +1,33 @@
 class Groundhog {
-  private Boolean cute;
-  private Boolean fuzzy;
-  private Integer springDate;
-  private String color;
+  private String name;
+  private Boolean accurate;
+  private Integer age;
+  private String date;
 
-  public Groundhog(){
+    public Groundhog() {
+      name = "Phil";
+      age = 134;
+      date = "february3";
+      accurate = true;
+    }
 
-}
+    public void popUpOnGroundhogDay() {
+      System.out.println("Spring is Early");
+    }
 
-public accurate(Boolean m){
+    public String isWrong() {
 
-}
+      return  "groundhog is wrong";
+    }
 
-public popUpOnGroundhogDay(){
+    public static void main(String[] args) {
+      Groundhog g = new Groundhog();
+      System.out.println(g.name);
+      System.out.println(g.age);
+      System.out.println(g.accurate);
 
-}
+      g.popUpOnGroundhogDay();
+      System.out.println(g.isWrong());
 
-public springIsEarly(){
-
-}
-  public static void main(String[] args) {
-
+    }
   }
-}
