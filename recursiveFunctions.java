@@ -1,54 +1,37 @@
 import java.util.*;
+//Kaylah Tan
 
-public class recursiveFunctions{
-
-public recursiveFunctions() {
-
-}
-
-public Integer bunnyEars(int n){
-  return n;
-  //base case
-  public static void main(String[] args){
-    Recurision recursionTool = new Recursion();
-     recursionTool.calculatebunnyEars()
-    recursiveFunctions.calculatebunnyEars2(0)
-    // 0 + 0
-    recursiveFunctions.calculatebunnyEars2(1)
-    // 0 + 1
-    recursiveFunctions.calculatebunnyEars2(2)
-    // 0 + 2
-  }
-
-
-}
-
-public Integer triangle(int r){
-  return r;
-  public static void main(String[] args){
-    Recursion recursionTool = new Recursion();
-    recursiveFunctions.calculateTriangle(0)
-    // 0 + 0
-    recursiveFunctions.calculateTriangle(1)
-    // 0 + 1
-    recursiveFunctions.calculateTriangle(2)
-    // 0 + 2
+public class recursiveBacktracking {
+  public int sum;
+  public int nextSum;
+  public recursiveBacktracking(){
 
   }
-}
 
-public Integer tree(int h){
-  return h;
-}
+public boolean groupSum(int start, int[] a, int s){
+  sum = a[start];
+  nextSum = nextSum + sum;
+  if (nextSum == s) {
+    return true;
+  } else {
+    if (start+1 == s) {
+      return true;
+    } else {
+      if (start+1 == a.length) {
+        return false;
+      } else {
+        groupSum(start+1, a, s);
+      }
 
-public static void main(String[] args) {
+    }
+    return false;
+  }
 
-
-  int inputVal = 4;
-
-  //System.out.println(bunnyEars(inputVal));
-  //System.out.println(triangle(inputVal));
-  //System.out.println(tree(inputVal));
-
-}
-}
+  public static void main(String[] args) {
+    recursiveBacktracking r = new recursiveBacktracking();
+    int start = 0;
+    int[] a = {3,5,6};
+    int s = 8;
+    System.out.println(r.groupSum(start,a,s));
+  }
+    }
